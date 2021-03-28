@@ -22,17 +22,19 @@ export class AddItemFormComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+       
     if(this.item.description){
       this.isNewItem=false;
     }else{
       this.isNewItem=true;
       this.item=new BudgetItem;
     }
+    
   }
+
 
   onSubmit(form:NgForm){
    this.formSubmit.emit(form.value);
-form.reset();
+    form.reset();
   }
 }

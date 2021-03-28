@@ -12,8 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -10px;
-    right: -10px;
+    top: -12px;
+    right: 1%;
 transition: opacity 0.2s ease-in, transform 0.2s ease-out;
     transform: scale(1);
     opacity: 0;
@@ -23,15 +23,17 @@ transition: opacity 0.2s ease-in, transform 0.2s ease-out;
     opacity: 1;
     transform: scale(1);
     
+    
 }
-.x-icon :hover{
+.x-icon:hover{
     transform: scale(1.2);
+  background-color: rgb(234, 240, 183) ;
 }
 
 .budget-item {
     display: flex;
-    width: 100%;
-    background-color: #f3f0f0;
+    width: 96%;
+    background-color: #ededef;
     padding: 0.7rem;
     border-radius: 0.25rem;
     cursor: pointer;
@@ -42,8 +44,8 @@ transition: opacity 0.2s ease-in, transform 0.2s ease-out;
 .description{
     display: flex;
     flex-grow: 1;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 400;
     margin-left: 0.5rem;
     align-items: center;
 }
@@ -51,8 +53,8 @@ transition: opacity 0.2s ease-in, transform 0.2s ease-out;
 .amount {
     padding: 0.5rem;
     border-radius: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 400;
     display: flex;
     align-items: center;
     
@@ -67,9 +69,9 @@ transition: opacity 0.2s ease-in, transform 0.2s ease-out;
 }
 
 .income {
-    color: rgb(144, 207, 56);
+    color: rgb(101, 187, 168);
 }
 
 .income .amount{
-    background-color: rgba(179, 211, 119, 0.5);
+    background-color: rgba(170, 252, 214, 0.5);
 }
