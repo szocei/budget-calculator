@@ -1,0 +1,48 @@
+.top-bar {
+    display: flex;
+    height: 68px;
+    width: 100%;
+  background: linear-gradient(75deg,#aaffaa,#aaaaff );
+
+  justify-content: center;
+align-items: center;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.total-budget-section{
+    display: flex;
+    height: 8rem;
+    background: #171717;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 4rem;
+    color: white;
+
+    }
+
+    .green{
+        color: chartreuse;
+    }
+
+    .red{
+        color: crimson;
+    }
+
+row{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

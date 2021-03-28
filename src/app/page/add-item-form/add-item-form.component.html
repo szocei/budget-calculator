@@ -1,0 +1,21 @@
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+    <div class="row pt-5">
+
+
+        <div class="form-group col-2 offset-2 h-50">
+
+            <input required [ngModel]="item.amount" type="number" class="form-control" name="amount"
+                placeholder="amount">
+
+        </div>
+        <div class="form-group col-5 h-50 ">
+            <input required [ngModel]="item.description" type="text" class="form-control" name="description"
+                placeholder="description">
+        </div>
+        <button [disabled]="!itemForm.valid" type="submit" class="btn col-1 onset-2 h-50"
+            [ngClass]="{'btn-primary': isNewItem,'btn-success':!isNewItem}">
+            <div *ngIf="isNewItem">Add</div>
+            <div *ngIf="!isNewItem">Save</div>
+        </button>
+    </div>
+</form>

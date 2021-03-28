@@ -1,0 +1,44 @@
+.budget-items-section{
+    display: flex;
+    padding: 2rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.budget-items-container{
+    display: flex;
+    max-width: 60vw;
+    width: 100%;
+    height: 100%;
+}
+
+.income-column, .expenses-column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    
+}
+h1{
+    font-size: 1.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.budget-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-right: 2em;
+}
+
+.income-column h1{
+    color: chartreuse;
+    
+}
+
+.expenses-column h1{
+    color: crimson;
+}
